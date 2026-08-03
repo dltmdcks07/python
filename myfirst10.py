@@ -368,19 +368,377 @@
 ##    if Input ==4:
 ##        break
 
-List=[]
 
-while True:
-    print("1.추가 2.삭제 3.확인 4.종료 : ", end="")
-    Input = int(input())
-    if Input ==1:
-        A = input("추가할 문자열을 입력해주세요: ")
-        List.append(A)
-        print(List)
-    if Input ==2:
-        List.remove()
-    if Input ==4:
-        break
+##List=[]
+##while True:
+##    Input =int(input("1.추가 2.삭제 3.확인 4.선택추가 5.종료 : "))
+##    if Input ==1:
+##        A = input("추가할 문자열을 입력해주세요: ")
+##        List.append(A)
+##        print(List)
+##    if Input ==2:
+##        i = len(List)-1
+##        del List[i]
+####        List.remove(A)
+##        print(List)
+##    if Input ==3:
+##        print(List)
+##    if Input ==4:
+##        B = input("추가할 문자열을 입력해주세요: ")
+##        C = int(input("추가할 위치를 입력해주세요: "))
+##        List. insert(C,B)
+##        print(List)
+##    if Input ==5:
+##        break
+##    print()
+
+
+##list1 = ['H','E','L','L','O']
+##tuple1=()
+##tuple2 = ('혼자',)
+##tuple3 = (5,6,7)
+##tuple4 = tuple(list1)
+##
+##print(tuple2[0])
+##print(tuple4[1:3])
+##print(len(tuple3))
+
+
+##list1 = ['G','O']
+##tuple1 = ('안','녕')
+##str1 = 'Bye'
+##l1,l2 = list1
+##t1,t2 = tuple1
+##s1,s2,s3 = str1
+##print(l1,l2, sep = '>')
+##print(t1,t2, end ='!')
+##print(s3,s2,s1, sep='-')
+
+
+##empty_tuple = ()
+##single_tuple = (10,)        #요소가 1개일때 쉼표 왜?
+##print(single_tuple)
+##multi_tuple = (10,20,30)
+##print(multi_tuple)
+
+
+##n_tuple = (10,20,30,40,50)
+##n_tuple[0] = 100
+##del n_tuple[0]
+
+
+##t= tuple(range(5))
+##print(t)
+##t2= tuple(range(9,20))
+##print(t2)
+##t3 = tuple(range(-10,5,2))
+##print(t3)
+##
+##t= 10,20,30,40
+##print(t,type(t))
+##t2 = 10,"이십",30,40
+##print(t2,type(t2))
+
+
+##single_tuple=(3,)
+##print(single_tuple)
+##
+##
+##t = tuple(range(0,9,2))
+##print(t)
+
+
+##lunch = ("샐러드", "햄버거","돈까스","뷔페")
+##dinner = ("만두","국밥","초밥","마라탕")
+##menu = lunch +dinner
+##dinner = dinner[3:]+("삼겹살",)+dinner[:1]
+##
+##print(menu)
+##print(dinner)
+
+
+##fruits = ('사과','귤','파인애플','메론')
+##reverse_fruits = fruits[::-1]
+##print(reverse_fruits)
+##snack = ('감자칩','새우깡','초콜렛')
+##print(snack)
+##potato, shrimp, chocolate = snack
+##print(potato)
+##print(shrimp)
+##print(chocolate)
+
+
+##snack = ('감자칩','새우깡','초콜렛')
+##print(snack, type(snack),sep="\n")
+##list_snack = list(snack)
+##print(list_snack, type(list_snack),sep = "\n")
+
+
+##t1 = (10,20,30,40,50)
+##t2 = (1,2,3,4,5)
+##t3 = t1+t2
+##t4=t1*2
+##print(t3)
+##print(t4)
+
+
+##tuple1 = (5,6,7,5,9,5,7)
+##c1 = tuple1.count(5)
+##print(c1)
+
+
+##tuple1 = (11,34,87,523)
+##num1 = tuple1.index(87)
+##print(num1)
+
+
+##ice2 = ("메로나","메로나","엔초","민트초코","호두마루")
+##print(ice2)
+##tmp = ice2.count("메로나")
+##print("메로나가 {0}개 있습니다." .format(tmp))
+
+
+##ice = ("죠스바","메로나","돼지바","호두마루")
+##txt = "메로나가 "
+##txt+=f"{ice.index("메로나")+1}번째에 있습니다."
+##print(txt)
+##print("ice에 총", len(ice),"개 있습니다.")
+
+
+##Tuple = (11,22,31,44,23,59)
+##print("31은 {0}번째에 있습니다.".format(Tuple.index(31)))
+
+
+##fruits = ('사과','귤','파인애플','메론')
+##reverse_fruits = fruits[::-1]
+##print(reverse_fruits)
+##snack = ('감자칩','새우깡','초콜렛')
+##print(snack)
+##potato, shrimp, chocolate = snack
+##print(potato)
+##print(shrimp)
+##print(chocolate)
+
+
+##ice2 = ("메로나","메로나","엔초","민트초코","호두마루")
+##List = list(ice2)
+##for i in List[1::2]:
+##    print(i)
+
+
+##multi_tuple = ('a','b','c')
+##print(multi_tuple)
+##multi_tuple = multi_tuple[0:1] + ("B",) + multi_tuple[2:]
+##print(multi_tuple)
+
+
+##empty = set()
+##s = {1,2,3,5,7,11,13,17,19}
+##print(s)
+##s = set([3,4,5,2,1,2,2,3,6,4,5])
+##print(s)
+
+
+##s = {6,3,7,2,9}
+##print(s)
+##s.add(8)
+##s.add(6)
+##print(s)
+##s.remove(7)
+##print(s)
+
+
+##s = {1,2,3,4,5}
+##print(s)
+
+
+##import random
+##empty = set()
+##for i in range(20):
+##    a= random.randint(1,20)
+##    empty.add(a)
+##print(empty)
+
+
+##empty_2 = set()
+##empty_3 = set()
+##empty_5 = set()
+##i=0
+##for i in range(30+1):
+##    if i%2==0:
+##        empty_2.add(i)
+##    if i%3==0:
+##        empty_3.add(i)
+##    if i%5==0:
+##        empty_5.add(i)
+##print(empty_2)
+##print(empty_3)
+##print(empty_5)
+
+
+##set1 = {9,4,6,2,1}
+##print(set1)
+##if 6 in set1:
+##    print("set1안에 6이 있습니다.")
+##if 10 in set1:
+##    print("set1안에 10이 있습니다.")
+##for el in set1:
+##    if el % 2 ==0:
+##        print(el)
+    
+    
+##set1 = {9,4,6,2,1}
+##set2 = {8,4,7,3,2}
+##
+##set5 = set1.difference(set2)
+##print(set5)
+##
+##set6 = set2.difference(set1)
+##print(set6)
+
+
+##set1 = {9,4,6,2,1}
+##set2 = {8,4,7,3,2}
+##set3 = set1.union(set2)
+##print(set3)
+##set4 = set1.intersection(set2)
+##print(set4)
+
+
+##set1 = {'가','나','다','라'}
+##set2 = {'가','나','다'}
+##if set2.issubset(set1):
+##    print("set1안에 set2를 포함!")
+##if set1.issuperset(set2):
+##    print("set2는 set1에 포함!")
+
+
+##set1 = {1,3,2,5,7}
+##set2 = {3,8,4,5}
+##
+##print("집합1의 구성", set1)
+##print("집합2의 구성", set2)
+##print()
+##print(set1.union(set2))
+##print(set1.intersection(set2))
+##print("집합1 - 집합2 차집합",set1.difference(set2))
+##print("집합2 - 집합1 차집합",set2.difference(set1))
+
+
+##set1 = {1,3,2,5,7}
+##set2 = {3,8,4,5}
+##
+##print("집합1의 구성", set1)
+##print("집합2의 구성", set2)
+##print()
+##print(set1.union(set2))
+##print(set1.intersection(set2))
+##print("집합1 - 집합2 차집합",set1.difference(set2))
+##print("집합2 - 집합1 차집합",set2.difference(set1))
+
+
+##set1 = {1, 3, 2, 5, 7}
+##set2 = {3, 8, 4, 5}
+##
+##print("집합1의 구성", set1)
+##print("집합2의 구성", set2)
+##print()
+##
+##if set1.issubset(set2):
+##    print("집합1은 집합2의 부분집합입니다.")
+##else:
+##    print("집합 1은 집합 2에 포함되지 않음")
+##    
+##if set2.issubset(set1):
+##    print("집합2는 집합1의 부분집합입니다.")
+##else:
+##    print("집합 2는 집합 1에 포함되지 않음")
+##print()
+##
+##setA = set1.difference(set2)
+##setB = set2.difference(set1)
+##print("대칭차집합",setA.union(setB))
+
+
+
+##set1 = set()
+##Input = input("문자열을 입력해주세요: ")
+##
+##for i in Input:
+##    if 'a' <= i <= 'z':
+##        set1.add(i)
+##    elif 'A' <= i <='Z':
+##        set1.add(i)
+##print(set1)
+
+
+##List1 = [1,2,4,8,16]
+##List2 = [1,2,3,4,5]
+##set1 = List1
+##set2 = List2
+##List3 = set1.union(set2)
+##print(List3)
+
+
+
+
+##List1 = [1, 2, 4, 8, 16]
+##List2 = [1, 2, 3, 4, 5]
+##print("리스트1의 구성", List1)
+##print("리스트2의 구성", List2)
+##print()
+##set1 = set(List1)
+##set2 = set(List2)
+##setA = set1.difference(set2)
+##setB = set2.difference(set1)
+##print("리스트3",list(setA.union(setB)))
+
+##empty = set()
+##i=0
+##while True:
+##    Input = int(input("1~30사이의 숫자를 입력해주세요: "))
+##    if Input >30:
+##        print("다시 입력해주세요.")
+##        
+##    else:
+##        empty.add(Input)
+##        i+=1
+##    if i<=5:
+##        break
+##print(empty)
+        
+
+
+
+
+##empty = set()
+##
+##while True:
+##    if len(empty) == 5:
+##        break
+##        
+##    Input = int(input("1~30사이의 숫자를 입력해주세요: "))
+##    
+##    if Input < 1 or Input > 30:
+##        print("다시 입력해주세요.")
+## 
+##    elif Input in empty:
+##        print("다시 입력해주세요.")
+##
+##    else:
+##        empty.add(Input)
+##
+##print("최종 입력된 숫자:", empty)
+
+
+
+
+
+
+
+
+
+
 
 
 
